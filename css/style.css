@@ -63,12 +63,21 @@ body {
 }
 
 	#thequestion article{
-		width: 1200px;
+		width: 900px;
 		margin: auto;
 		text-align: center;
 		position: relative;
 		top: 50px;
 	}
+
+    #thequestion h2{
+        color: var(--orange);
+    }
+
+    #thequestion h3{
+        color: var(--pink);
+        font-size: 35pt;
+    }
 
 	#thequestion ul {
 		margin: auto;
@@ -173,9 +182,35 @@ body {
 /****TEAM SECTION****/
 #team {
     text-align: center;
+    height: 100vh
 }
+
+    #teamtitle{
+        position: relative;
+        top: 50px;
+    }
+
+        #teamtitle h1{
+            color: var(--orange); 
+            font-size: 20pt;
+        }
+
+        #teamtitle h2{
+           color: var(--pink);
+            font-size: 30pt;
+        }
+
+    #team article{
+        margin-top: 50px;
+    }
 
     #team li{
         display: inline-block;	
         margin: 20px 40px 20px 40px; 
+    }
+
+    #team figcaption{
+        font-size: 20pt;
+        font-weight: bold;
+        color: var(--blue);
     }
