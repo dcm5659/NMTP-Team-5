@@ -1,14 +1,181 @@
+:root{
+    --orange:#ff9600;
+    --blue:#00a8f5;
+    --pink:#f62da8;
+}
+
 * {margin: 0; padding: 0;}
 
 
+body {
+	font-family: 'Hind', sans-serif;
+}
+
+
+/****MAIN LANDING PAGE****/
 #landing {
 	height: 100vh;
 	width: 100%;
 	background: url("../media/landing-placeholder.jpg"); 
 }
 
-#landing img {
-	display: block;
-	margin: auto;
-	padding-top: 100px;
+	#ritlogo {
+		display: block;
+		margin: auto;
+		padding-top: 25px;
+	}
+
+	#smileslogo {
+		display: block;
+		margin: auto;
+	}
+
+	#landing nav{
+		margin: auto;
+		text-align: center;
+	}
+
+	#landing a{
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color: white;
+		font-size: 30pt;
+		background: #38AEFF;
+		width: 225px;
+		height: 50px;
+		border-radius: 5px;
+		margin: 15px;
+		margin-top: 0;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		-webkit-transition: 0.3s ease; 
+    	transition: 0.3s ease;	
+    }
+
+	#landing a:hover{
+		background-color: #2D8CCC;
+	}
+
+/****QUESTION SECTION****/
+#thequestion {
+	height: 50vh;
 }
+
+	#thequestion article{
+		width: 1200px;
+		margin: auto;
+		text-align: center;
+		position: relative;
+		top: 50px;
+	}
+
+	#thequestion ul {
+		margin: auto;
+		text-align: center;
+		position: relative;
+		top: 100px;
+	}
+
+	#thequestion ul li{
+		display: inline-block;
+		padding: 5px;
+	}
+
+/****DATA COLLECTION SECTION****/
+#datacollection {
+	background-color: var(--orange);
+	height: 450px;
+	color: white;
+}
+
+	#datacollection article{
+		width: 450px;
+		margin-left: 175px;
+		position: relative;
+		top: 90px;
+		float: left;
+	}
+
+	#datacollection img {
+		float: right;
+	}
+
+	#datacollection p{
+		margin-top:20px;
+
+	}
+
+
+
+/****DATA DISPLAY SECTION****/
+#datadisplay {
+	background-color: var(--pink);
+	height: 450px;
+	color: white;
+}
+
+	#datadisplay  article{
+		width: 450px;
+		margin-right: 175px;
+		position: relative;
+		top: 90px;
+		float: right;
+	}
+
+	#datadisplay  img {
+		float: left;
+	}
+
+	#datadisplay  p{
+		margin-top:20px;
+	}
+
+
+/****PROCESS SECTION****/
+#process {
+    margin: auto;
+    text-align: center;
+}
+
+    #processtitle{
+        margin: 15px;
+    }
+
+        #processtitle h1{
+            color: var(--orange);
+            font-size: 20pt;
+        }
+
+        #processtitle h2{
+            color: var(--pink);
+            font-size: 24pt;
+        }
+
+	#process li{
+		display: inline-block;	
+        margin: 0px 10px 0px 10px; 
+	}
+
+	#process figcaption{
+		width:300px;
+	}
+
+        #process figcaption h1 {
+            color: var(--blue)
+        }
+
+/****GALLERY SECTION****/
+#gallery {
+    
+}
+
+/****TEAM SECTION****/
+#team {
+    text-align: center;
+}
+
+    #team li{
+        display: inline-block;	
+        margin: 20px 40px 20px 40px; 
+    }
