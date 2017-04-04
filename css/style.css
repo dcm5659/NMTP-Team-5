@@ -176,7 +176,13 @@ body {
 
 /****GALLERY SECTION****/
 #gallery {
-    
+    width: 40%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#carousel img{
+    width: 40%;
 }
 
 /****TEAM SECTION****/
