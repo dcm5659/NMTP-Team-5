@@ -11,6 +11,30 @@ body {
 	font-family: 'Hind', sans-serif;
 }
 
+/********/
+.button {
+	display: 
+		inline-block;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		font-size: 30pt;
+		background: #38AEFF;
+		width: 225px;
+		height: 50px;
+		border-radius: 5px;
+		margin: 15px;
+		margin-top: 0;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		-webkit-transition: 0.3s ease; 
+    	transition: 0.3s ease;	
+}
+
+.button:hover{
+	background-color: #2D8CCC;
+}
+
 
 /****MAIN LANDING PAGE****/
 #landing {
@@ -34,24 +58,6 @@ body {
 		margin: auto;
 		text-align: center;
 	}
-
-	#landing a{
-		display: inline-block;
-		vertical-align: middle;
-		text-decoration: none;
-		color: white;
-		font-size: 30pt;
-		background: #38AEFF;
-		width: 225px;
-		height: 50px;
-		border-radius: 5px;
-		margin: 15px;
-		margin-top: 0;
-		padding-top: 5px;
-		padding-bottom: 10px;
-		-webkit-transition: 0.3s ease; 
-    	transition: 0.3s ease;	
-    }
 
 	#landing a:hover{
 		background-color: #2D8CCC;
@@ -176,14 +182,24 @@ body {
 
 /****GALLERY SECTION****/
 #gallery {
-    width: 40%;
-    margin: auto;
     margin-top: 40px;
+    position: relative;
 }
 
-#carousel img{
-    width: 40%;
-}
+	#gallerynav{
+		position: absolute;
+		top: 300px;
+		left: 80%;
+	}
+
+		#gallerynav h1{
+			color: var(--orange);
+		}
+
+		#gallerynav h2{
+			color: var(--pink);
+			font-size: 24pt;
+		}
 
 /****TEAM SECTION****/
 #team {
