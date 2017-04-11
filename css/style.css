@@ -11,7 +11,7 @@ body {
 	font-family: 'Hind', sans-serif;
 }
 
-/********/
+/****CLASSES****/
 .button {
 	display: 
 		inline-block;
@@ -38,20 +38,23 @@ body {
 
 /****MAIN LANDING PAGE****/
 #landing {
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	background: url("../media/landing-placeholder.jpg"); 
+	background-size: cover;
 }
 
 	#ritlogo {
 		display: block;
 		margin: auto;
 		padding-top: 25px;
+		width: 13%;
 	}
 
 	#smileslogo {
 		display: block;
 		margin: auto;
+		width: 65%;
 	}
 
 	#landing nav{
@@ -65,11 +68,11 @@ body {
 
 /****QUESTION SECTION****/
 #thequestion {
-	height: 50vh;
+	height: 550px;
 }
 
 	#thequestion article{
-		width: 900px;
+		width: 60%;
 		margin: auto;
 		text-align: center;
 		position: relative;
@@ -99,28 +102,37 @@ body {
 
 /****DATA COLLECTION SECTION****/
 #datacollection {
-	background-color: var(--orange);
+	position: relative;
 	height: 450px;
 	color: white;
+	background-color: var(--orange);
 }
 
-	#datacollection article{
-		width: 450px;
+	/*#datacollection article{
+		min-width: 300px;
+		width: 30%;
 		margin-left: 175px;
 		position: relative;
-		top: 90px;
+		top: 75px;
 		float: left;
+	}*/
+
+	#datacollection div{
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+		float: left;
+		width: 400px;
 	}
 
-	#datacollection img {
+	#collectionimg {
+		display: inline-block;
 		float: right;
 	}
 
-	#datacollection p{
-		margin-top:20px;
-
+	#collectionimgmob {
+		display: none;
 	}
-
 
 
 /****DATA DISPLAY SECTION****/
@@ -128,15 +140,17 @@ body {
 	background-color: var(--pink);
 	height: 450px;
 	color: white;
+	position: relative;
 }
 
 	#datadisplay  article{
 		width: 450px;
 		margin-right: 175px;
-		position: relative;
-		top: 90px;
+/*		position: relative;*/
+		top: 80px;
 		float: right;
 	}
+
 
 	#datadisplay  img {
 		float: left;
@@ -154,7 +168,8 @@ body {
 }
 
     #processtitle{
-        margin: 15px;
+    	margin: auto;
+        margin-top: 15px;
     }
 
         #processtitle h1{
@@ -174,6 +189,8 @@ body {
 
 	#process figcaption{
 		width:300px;
+		text-align: center;
+		margin: auto;
 	}
 
         #process figcaption h1 {
@@ -185,6 +202,12 @@ body {
     margin-top: 40px;
     position: relative;
 }
+	
+	#galleryimg{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 
 	#gallerynav{
 		position: absolute;
@@ -226,13 +249,105 @@ body {
         margin-top: 50px;
     }
 
-    #team li{
+    #team figure{
         display: inline-block;	
-        margin: 20px 40px 20px 40px; 
+        width: 33.3333%;
+        margin: 0;
+        padding: 0;
+        float: left;
     }
 
-    #team figcaption{
-        font-size: 20pt;
-        font-weight: bold;
-        color: var(--blue);
+    	/****Team overlay css****/
+    	.info {
+		  position: relative;
+		}
+
+    	.overlay {
+			  position: absolute;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  background-color: #008CBA;
+			  overflow: hidden;
+			  width: 100%;
+			  height: 0;
+			  transition: .5s ease;
+		}
+
+		.info:hover .overlay {
+		  height: 100%;
+		}
+
+		.image {
+		  display: block;
+		  width: 100%;
+		  height: auto;
+		}
+
+		.text {
+		  white-space: nowrap; 
+		  color: white;
+		  font-size: 20px;
+		  position: absolute;
+		  overflow: hidden;
+		  top: 50%;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  -ms-transform: translate(-50%, -50%);
+		}
+/****REACTIVE STYLES****/
+/*@media all and (max-width: 1700px){
+	#datacollection img {
+		width: 20%;
+	}
+
+	#datadisplay img {
+		width: 20%;
+	}
+}
+*/
+
+@media all and (max-width: 1600px){
+	#process li{
+		display: block;	
+	}
+}
+
+@media all and (max-width: 1200px){
+	#team figure{
+        width: 50%;
     }
+}
+
+
+
+@media all and (max-width: 800px){
+	#landing nav{
+		display: block;
+	}
+
+	#smileslogo {
+		width: 95%;
+	}
+
+	#ritlogo {
+		width: 25%;
+	}
+
+	#thequestion{
+		height: 650px;
+	}
+
+	#thequestion h2{
+        font-size: 15pt;
+    }
+
+	#thequestion h3{
+        color: var(--pink);
+        font-size: 20pt;
+    }
+
+    #team figure{
+        width: 100%;
+    }
+}
