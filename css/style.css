@@ -9,6 +9,7 @@
 
 body {
 	font-family: 'Hind', sans-serif;
+	min-width: 450px;
 }
 
 /****CLASSES****/
@@ -66,8 +67,24 @@ body {
 		text-align: center;
 	}
 
-	#landing a:hover{
+	#landing nav a:hover{
 		background-color: #2D8CCC;
+	}
+
+	#landing div{
+
+		text-align: center;
+	}
+
+	#landing i{
+		color: var(--orange);
+		font-size:86px;
+		-webkit-transition: 0.3s ease; 
+    	transition: 0.3s ease;	
+	}
+
+	#landing i:hover{
+		color: #FFB732;
 	}
 
 /****QUESTION SECTION****/
@@ -177,6 +194,10 @@ body {
             color: var(--pink);
             font-size: 24pt;
         }
+
+    #process ul{
+    	margin-bottom: 20px;
+    }
 
 	#process li{
 		display: inline-block;	
@@ -354,7 +375,12 @@ body {
    
 }
 
+@media all and (max-width: 900px){
 
+    #landing div{
+    	display: none;
+	}
+}
 
 @media all and (max-width: 800px){
 	#landing nav{
@@ -385,4 +411,5 @@ body {
     #team figure{
         width: 100%;
     }
+
 }
